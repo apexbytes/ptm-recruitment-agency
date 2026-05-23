@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job List - PTM Recruitment Agency</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body class="inner-page">
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.jpeg" alt="PTM Logo">
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="jobs.html" class="active">Job List</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="#">Pages</a></li>
+                </ul>
+                <a href="#" class="btn btn-primary btn-post">POST A JOB</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-banner">
+            <div class="container">
+                <h1 class="page-title">Browse All Jobs</h1>
+                <p class="page-subtitle">Find your next career move among our 5,000+ active job listings.</p>
+            </div>
+        </section>
+
+        <!-- Search Bar Section -->
+        <section class="job-search-bar">
+            <div class="container">
+                <div class="search-container">
+                    <div class="search-input">
+                        <i class="ph ph-briefcase"></i>
+                        <input type="text" placeholder="Job title, keywords, or company">
+                    </div>
+                    <div class="search-input">
+                        <i class="ph ph-map-pin"></i>
+                        <input type="text" placeholder="Location (City, Country)">
+                    </div>
+                    <div class="search-input">
+                        <i class="ph ph-squares-four"></i>
+                        <select>
+                            <option value="">Select Category</option>
+                            <option value="it">Information Technology</option>
+                            <option value="design">Design & Creative</option>
+                            <option value="marketing">Digital Marketing</option>
+                            <option value="management">Management</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-primary"><i class="ph ph-magnifying-glass"></i> Search</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Job Listing Layout -->
+        <section class="job-listing-main">
+            <div class="container listing-grid">
+                <!-- Sidebar Filters -->
+                <aside class="filters-sidebar">
+                    <div class="filter-group">
+                        <h4>Job Type</h4>
+                        <label class="checkbox-label">
+                            <input type="checkbox" checked>
+                            <span class="checkmark"></span> Full Time (450)
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox">
+                            <span class="checkmark"></span> Part Time (120)
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox">
+                            <span class="checkmark"></span> Remote (85)
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox">
+                            <span class="checkmark"></span> Internship (42)
+                        </label>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4>Salary Range</h4>
+                        <label class="checkbox-label">
+                            <input type="checkbox">
+                            <span class="checkmark"></span> $10k - $20k
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" checked>
+                            <span class="checkmark"></span> $20k - $50k
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox">
+                            <span class="checkmark"></span> $50k - $100k
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox">
+                            <span class="checkmark"></span> $100k+
+                        </label>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4>Experience Level</h4>
+                        <label class="radio-label">
+                            <input type="radio" name="exp" checked>
+                            <span class="radio-mark"></span> All Levels
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="exp">
+                            <span class="radio-mark"></span> Entry Level
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="exp">
+                            <span class="radio-mark"></span> Intermediate
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="exp">
+                            <span class="radio-mark"></span> Senior / Expert
+                        </label>
+                    </div>
+
+                    <div class="filter-promo">
+                        <i class="ph ph-bell-ringing"></i>
+                        <h5>Job Alert</h5>
+                        <p>Receive new jobs like this in your inbox.</p>
+                        <input type="email" placeholder="Email address">
+                        <button class="btn btn-primary btn-block">Set Alert</button>
+                    </div>
+                </aside>
+
+                <!-- Main Content (Jobs) -->
+                <div class="jobs-content">
+                    <div class="listing-header">
+                        <p>Showing <strong>1 - 12</strong> of 542 jobs</p>
+                        <div class="sort-by">
+                            <span>Sort by:</span>
+                            <select>
+                                <option>Newest First</option>
+                                <option>Oldest First</option>
+                                <option>Salary (High to Low)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="jobs-list">
+                        <!-- Job Item 1 -->
+                        <div class="job-item">
+                            <div class="job-item-logo">
+                                <i class="ph ph-app-window"></i>
+                            </div>
+                            <div class="job-item-info">
+                                <div class="job-item-top">
+                                    <h3 class="job-item-title"><a href="job.html">IT Support Associate</a></h3>
+                                    <span class="job-item-tag full-time">Full Time</span>
+                                </div>
+                                <div class="job-item-meta">
+                                    <span><i class="ph ph-buildings"></i> FoxHUB Studios</span>
+                                    <span><i class="ph ph-map-pin"></i> Jakarta, Indonesia</span>
+                                    <span><i class="ph ph-currency-dollar"></i> $20k - $25k</span>
+                                </div>
+                            </div>
+                            <div class="job-item-action">
+                                <a href="apply.html" class="btn btn-outline">Apply Now</a>
+                                <span class="post-date">2 days ago</span>
+                            </div>
+                        </div>
+
+                        <!-- Job Item 2 -->
+                        <div class="job-item">
+                            <div class="job-item-logo">
+                                <i class="ph ph-diamonds-four"></i>
+                            </div>
+                            <div class="job-item-info">
+                                <div class="job-item-top">
+                                    <h3 class="job-item-title"><a href="job.html">Android Developer</a></h3>
+                                    <span class="job-item-tag full-time">Full Time</span>
+                                </div>
+                                <div class="job-item-meta">
+                                    <span><i class="ph ph-buildings"></i> Treva Agency</span>
+                                    <span><i class="ph ph-map-pin"></i> Bandung, Indonesia</span>
+                                    <span><i class="ph ph-currency-dollar"></i> $25k - $40k</span>
+                                </div>
+                            </div>
+                            <div class="job-item-action">
+                                <a href="apply.html" class="btn btn-outline">Apply Now</a>
+                                <span class="post-date">3 days ago</span>
+                            </div>
+                        </div>
+
+                        <!-- Job Item 3 -->
+                        <div class="job-item featured">
+                            <div class="job-item-logo">
+                                <i class="ph ph-music-note"></i>
+                            </div>
+                            <div class="job-item-info">
+                                <div class="job-item-top">
+                                    <h3 class="job-item-title"><a href="job.html">Senior Project Manager</a></h3>
+                                    <span class="job-item-tag full-time">Full Time</span>
+                                    <span class="featured-label">Featured</span>
+                                </div>
+                                <div class="job-item-meta">
+                                    <span><i class="ph ph-buildings"></i> Muzica Studio</span>
+                                    <span><i class="ph ph-map-pin"></i> Surabaya, Indonesia</span>
+                                    <span><i class="ph ph-currency-dollar"></i> $45k - $60k</span>
+                                </div>
+                            </div>
+                            <div class="job-item-action">
+                                <a href="apply.html" class="btn btn-primary">Apply Now</a>
+                                <span class="post-date">Just now</span>
+                            </div>
+                        </div>
+
+                        <!-- Job Item 4 -->
+                        <div class="job-item">
+                            <div class="job-item-logo">
+                                <i class="ph ph-globe-hemisphere-west"></i>
+                            </div>
+                            <div class="job-item-info">
+                                <div class="job-item-top">
+                                    <h3 class="job-item-title"><a href="job.html">Frontend Web Developer</a></h3>
+                                    <span class="job-item-tag remote">Remote</span>
+                                </div>
+                                <div class="job-item-meta">
+                                    <span><i class="ph ph-buildings"></i> Earth Community</span>
+                                    <span><i class="ph ph-map-pin"></i> London, UK (Remote)</span>
+                                    <span><i class="ph ph-currency-dollar"></i> $30k - $45k</span>
+                                </div>
+                            </div>
+                            <div class="job-item-action">
+                                <a href="apply.html" class="btn btn-outline">Apply Now</a>
+                                <span class="post-date">1 week ago</span>
+                            </div>
+                        </div>
+
+                        <!-- Job Item 5 -->
+                        <div class="job-item">
+                            <div class="job-item-logo">
+                                <i class="ph ph-framer-logo"></i>
+                            </div>
+                            <div class="job-item-info">
+                                <div class="job-item-top">
+                                    <h3 class="job-item-title"><a href="job.html">Lead UI/UX Designer</a></h3>
+                                    <span class="job-item-tag full-time">Full Time</span>
+                                </div>
+                                <div class="job-item-meta">
+                                    <span><i class="ph ph-buildings"></i> Fossa News</span>
+                                    <span><i class="ph ph-map-pin"></i> Jakarta, Indonesia</span>
+                                    <span><i class="ph ph-currency-dollar"></i> $35k - $50k</span>
+                                </div>
+                            </div>
+                            <div class="job-item-action">
+                                <a href="apply.html" class="btn btn-outline">Apply Now</a>
+                                <span class="post-date">2 weeks ago</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <a href="#" class="page-link prev"><i class="ph ph-caret-left"></i></a>
+                        <a href="#" class="page-link active">1</a>
+                        <a href="#" class="page-link">2</a>
+                        <a href="#" class="page-link">3</a>
+                        <span class="page-dots">...</span>
+                        <a href="#" class="page-link">15</a>
+                        <a href="#" class="page-link next"><i class="ph ph-caret-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col main">
+                    <a href="index.html" class="logo">
+                        <img src="images/logo.jpeg" alt="PTM Logo">
+                    </a>
+                    <p class="footer-desc">
+                        PTM Recruitment Agency is the leading global recruitment platform, connecting top talent with industry-leading companies since 2010.
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="ph ph-facebook-logo"></i></a>
+                        <a href="#"><i class="ph ph-twitter-logo"></i></a>
+                        <a href="#"><i class="ph ph-linkedin-logo"></i></a>
+                        <a href="#"><i class="ph ph-instagram-logo"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press Release</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Job Board</a></li>
+                        <li><a href="#">Career Blog</a></li>
+                        <li><a href="#">Success Stories</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 PTM Recruitment Agency. All Rights Reserved. Designed by Gemini CLI.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

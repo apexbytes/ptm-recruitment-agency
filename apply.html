@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for Job - PTM Recruitment Agency</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body class="inner-page">
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.jpeg" alt="PTM Logo">
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="jobs.html">Job List</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="#">Pages</a></li>
+                </ul>
+                <a href="#" class="btn btn-primary btn-post">POST A JOB</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Application Page Banner -->
+        <section class="page-banner">
+            <div class="container">
+                <h1 class="page-title">Submit Your Application</h1>
+                <p class="page-subtitle">You're applying for: <strong>Senior Project Manager</strong> at <strong>Muzica Studio</strong></p>
+            </div>
+        </section>
+
+        <!-- Application Form Section -->
+        <section class="apply-section">
+            <div class="container">
+                <div class="apply-container">
+                    <!-- Progress Bar (Subtle) -->
+                    <div class="form-progress">
+                        <div class="progress-step active" data-step="1">
+                            <span class="step-dot"></span>
+                            <span class="step-label">Personal Info</span>
+                        </div>
+                        <div class="progress-step" data-step="2">
+                            <span class="step-dot"></span>
+                            <span class="step-label">Resume / CV</span>
+                        </div>
+                        <div class="progress-step" data-step="3">
+                            <span class="step-dot"></span>
+                            <span class="step-label">Submission</span>
+                        </div>
+                    </div>
+
+                    <form class="application-form">
+                        <!-- Step 1: Personal Info -->
+                        <div class="form-step active">
+                            <div class="form-grid">
+                                <div class="input-group">
+                                    <label for="full-name">Full Name *</label>
+                                    <div class="input-wrapper">
+                                        <i class="ph ph-user"></i>
+                                        <input type="text" id="full-name" placeholder="e.g. Alex Johnson" required>
+                                    </div>
+                                </div>
+                                <div class="input-group">
+                                    <label for="email">Email Address *</label>
+                                    <div class="input-wrapper">
+                                        <i class="ph ph-envelope-simple"></i>
+                                        <input type="email" id="email" placeholder="alex@example.com" required>
+                                    </div>
+                                </div>
+                                <div class="input-group">
+                                    <label for="phone">Phone Number *</label>
+                                    <div class="input-wrapper">
+                                        <i class="ph ph-phone"></i>
+                                        <input type="tel" id="phone" placeholder="+62 812 3456 789" required>
+                                    </div>
+                                </div>
+                                <div class="input-group">
+                                    <label for="portfolio">Portfolio Link (Optional)</label>
+                                    <div class="input-wrapper">
+                                        <i class="ph ph-link"></i>
+                                        <input type="url" id="portfolio" placeholder="https://yourportfolio.com">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: Resume / CV -->
+                        <div class="form-step">
+                            <div class="upload-area" id="drop-zone">
+                                <i class="ph ph-cloud-arrow-up"></i>
+                                <h3>Upload your CV / Resume</h3>
+                                <p>Drag and drop your file here or <span>browse files</span></p>
+                                <span class="file-hint">Supported formats: PDF, DOCX (Max 5MB)</span>
+                                <input type="file" id="file-upload" hidden accept=".pdf,.docx">
+                            </div>
+                            <div class="input-group full-width">
+                                <label for="cover-letter">Cover Letter (Optional)</label>
+                                <textarea id="cover-letter" placeholder="Tell us why you're a great fit for this role..."></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Form Actions -->
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-outline" id="prev-btn" disabled>Previous Step</button>
+                            <button type="button" class="btn btn-primary" id="next-btn">Next Step <i class="ph ph-arrow-right"></i></button>
+                            <button type="submit" class="btn btn-primary" id="submit-btn" style="display: none;">Submit Application</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col main">
+                    <a href="index.html" class="logo">
+                        <img src="images/logo.jpeg" alt="PTM Logo">
+                    </a>
+                    <p class="footer-desc">
+                        PTM Recruitment Agency is the leading global recruitment platform, connecting top talent with industry-leading companies since 2010.
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="ph ph-facebook-logo"></i></a>
+                        <a href="#"><i class="ph ph-twitter-logo"></i></a>
+                        <a href="#"><i class="ph ph-linkedin-logo"></i></a>
+                        <a href="#"><i class="ph ph-instagram-logo"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press Release</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Job Board</a></li>
+                        <li><a href="#">Career Blog</a></li>
+                        <li><a href="#">Success Stories</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 PTM Recruitment Agency. All Rights Reserved. Designed by Gemini CLI.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple Form Navigation Script
+        const steps = document.querySelectorAll('.form-step');
+        const progressSteps = document.querySelectorAll('.progress-step');
+        const nextBtn = document.getElementById('next-btn');
+        const prevBtn = document.getElementById('prev-btn');
+        const submitBtn = document.getElementById('submit-btn');
+        let currentStep = 0;
+
+        nextBtn.addEventListener('click', () => {
+            if (currentStep < steps.length - 1) {
+                steps[currentStep].classList.remove('active');
+                currentStep++;
+                steps[currentStep].classList.add('active');
+                updateProgress();
+            }
+        });
+
+        prevBtn.addEventListener('click', () => {
+            if (currentStep > 0) {
+                steps[currentStep].classList.remove('active');
+                currentStep--;
+                steps[currentStep].classList.add('active');
+                updateProgress();
+            }
+        });
+
+        function updateProgress() {
+            progressSteps.forEach((step, idx) => {
+                if (idx <= currentStep) {
+                    step.classList.add('active');
+                } else {
+                    step.classList.remove('active');
+                }
+            });
+
+            prevBtn.disabled = currentStep === 0;
+            
+            if (currentStep === steps.length - 1) {
+                nextBtn.style.display = 'none';
+                submitBtn.style.display = 'inline-block';
+            } else {
+                nextBtn.style.display = 'inline-block';
+                submitBtn.style.display = 'none';
+            }
+        }
+
+        // Drop zone interaction
+        const dropZone = document.getElementById('drop-zone');
+        const fileInput = document.getElementById('file-upload');
+
+        dropZone.addEventListener('click', () => fileInput.click());
+        
+        dropZone.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            dropZone.classList.add('drag-over');
+        });
+
+        dropZone.addEventListener('dragleave', () => {
+            dropZone.classList.remove('drag-over');
+        });
+
+        dropZone.addEventListener('drop', (e) => {
+            e.preventDefault();
+            dropZone.classList.remove('drag-over');
+            if (e.dataTransfer.files.length) {
+                fileInput.files = e.dataTransfer.files;
+                alert('File selected: ' + e.dataTransfer.files[0].name);
+            }
+        });
+
+        fileInput.addEventListener('change', () => {
+            if (fileInput.files.length) {
+                alert('File selected: ' + fileInput.files[0].name);
+            }
+        });
+    </script>
+</body>
+</html>
